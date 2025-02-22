@@ -1,0 +1,50 @@
+{
+  "name": "my-turborepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev --concurrency=24",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "turbo": "^2.0.12",
+    "typescript": "^5.4.5",
+    "vite": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.5.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@react-spring/three": "^9.7.3",
+    "@react-three/a11y": "^3.0.0",
+    "@react-three/drei": "^9.97.0",
+    "@react-three/fiber": "^8.15.16",
+    "@tweenjs/tween.js": "^25.0.0",
+    "@types/three": "^0.161.2",
+    "autoprefixer": "^10",
+    "css-loader": "^6.8.1",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "eslint-plugin-storybook": "^0.6.14",
+    "lil-gui": "^0.19.2",
+    "next": "13.5.4",
+    "postcss": "^8",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-spring": "^9.7.3",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
+    "storybook": "7.4.6",
+    "style-loader": "^3.3.3",
+    "swr": "^2.2.5",
+    "tailwindcss": "^3",
+    "three": "^0.167.1"
+  }
+}
